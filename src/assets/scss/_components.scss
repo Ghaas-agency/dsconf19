@@ -9,16 +9,16 @@
 }
 
 .button, input[type="submit"] {
-  padding: 10px 20px;
+  padding: 8px 13px;
   display: inline-block;
   background-color: $primary-color;
   color: $grey-color-light;
   font-size: 1.1em;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 20px;
-  letter-spacing: 1.5px;
-  /* box-shadow: $primary-shadow; */
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
   border: 1px solid $primary-color;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -27,8 +27,7 @@
   transition: all 0.3s ease-in-out;
 
   &:hover, &:focus {
-    background-color: lighten($primary-color, 5%);
-    box-shadow: $secondary-shadow;
+    background-color: lighten($primary-color, 10%);
   }
 }
 
@@ -36,12 +35,13 @@
   @extend .button;
 
   background-color: transparent;
-  border: 1px solid $primary-color;
+  border: 2px solid $primary-color;
   color: $primary-color;
+  padding: 5.5px 13px;
 
   &:hover, &:focus {
-    border: 1px solid $primary-color;
-    background-color: $grey-color-light;
+    border: 2px solid $primary-color;
+    background-color: lighten($primary-color, 44%);
   }
 }
 
@@ -90,6 +90,10 @@ a.button {
 
 .center-align {
   text-align: center;
+}
+
+.p-normal {
+  font-size: 18px;
 }
 
 @keyframes fade-in {

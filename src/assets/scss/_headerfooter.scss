@@ -4,7 +4,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid $primary-color;
+  /* border-bottom: 1px solid $primary-color; */
   z-index: 99;
 
   .container {
@@ -48,7 +48,8 @@ nav {
         font-size: 15px;
 
         &:hover {
-          background-color: darken($grey-color-light, 5%);
+          /* background-color: darken($grey-color-light, 5%); */
+          margin: 0;
         }
 
         @media (max-width: 480px) {

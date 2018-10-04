@@ -13,7 +13,7 @@
 
 <body>
 
-  <!-- <nav>
+  <nav>
     <div class="container">
       <div class="nav-left">
         <img src="assets/img/DSConf_logo.svg" alt="DSConf logo">
@@ -29,7 +29,7 @@
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav>
 
   <!-- <div class="nav-wrapper"></div> -->
 
@@ -86,7 +86,7 @@
           <div class="section-speakers__item">
             <img src="assets/img/faces/pexels-photo-1222271.jpeg" alt="">
             <div class="section-speakers__item--content">
-              <p><strong>Dr. Sriram Srinivasan</strong></p>
+              <p style="line-height: 1.85em"><strong class="p-normal">Dr. Sriram Srinivasan</strong><br>CEO at Serv Inc.</p>
               <p>Dr. Srinivasan is a systems and programming languages geek with 30+ years of experience, from embedded
                 devices to large-scale distributed systems and frameworks. He was one of the principal designers and
                 implementors of the Weblogic application server. He has a PhD from the Univ. of Cambridge and teaches Distributed Systems at IIT Bombay.</p>
@@ -96,7 +96,7 @@
           <div class="section-speakers__item">
             <img src="assets/img/faces/pexels-photo-542282.jpeg" alt="">
             <div class="section-speakers__item--content">
-              <p><strong>Dr. Sriram Srinivasan</strong></p>
+              <p style="line-height: 1.85em"><strong class="p-normal">Dr. Sriram Srinivasan</strong><br>CEO at Serv Inc.</p>
               <p>Dr. Srinivasan is a systems and programming languages geek with 30+ years of experience, from embedded
                 devices to large-scale distributed systems and frameworks. He was one of the principal designers and
                 implementors of the Weblogic application server. He has a PhD from the Univ. of Cambridge and teaches Distributed Systems at IIT Bombay.</p>
@@ -106,7 +106,7 @@
           <div class="section-speakers__item">
             <img src="assets/img/faces/pexels-photo-555790.png" alt="">
             <div class="section-speakers__item--content">
-              <p><strong>Dr. Sriram Srinivasan</strong></p>
+              <p style="line-height: 1.85em"><strong class="p-normal">Dr. Sriram Srinivasan</strong><br>CEO at Serv Inc.</p>
               <p>Dr. Srinivasan is a systems and programming languages geek with 30+ years of experience, from embedded
                 devices to large-scale distributed systems and frameworks. He was one of the principal designers and
                 implementors of the Weblogic application server. He has a PhD from the Univ. of Cambridge and teaches Distributed Systems at IIT Bombay.</p>
@@ -116,7 +116,7 @@
           <div class="section-speakers__item">
             <img src="assets/img/faces/pexels-photo-614810.jpeg" alt="">
             <div class="section-speakers__item--content">
-              <p><strong>Dr. Sriram Srinivasan</strong></p>
+              <p style="line-height: 1.85em"><strong class="p-normal">Dr. Sriram Srinivasan</strong><br>CEO at Serv Inc.</p>
               <p>Dr. Srinivasan is a systems and programming languages geek with 30+ years of experience, from embedded
                 devices to large-scale distributed systems and frameworks. He was one of the principal designers and
                 implementors of the Weblogic application server. He has a PhD from the Univ. of Cambridge and teaches Distributed Systems at IIT Bombay.</p>
@@ -134,43 +134,25 @@
           <h2>Schedule</h2>
           <h3>(9 am to 5.30 pm)</h3>
         </div>
-        <div class="section-schedule__table">
-          <table>
-            <thead>
-              <tr>
-                <th>Time</th>
-                <th>Session</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>9:00 AM</td>
-                <td>Registration</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>9:30 AM</td>
-                <td>The Many Flavours Of Consensus<br><strong>- Dr. Sriram Srinivasan</strong></td>
-                <td>Consensus is the act of agreement amongst distributed participants. This talk will try to make
-                  sense of the wide variety of problems and solutions that are lumped under the consensus label:
-                  two-phase commit, byzantine agreement, paxos/raft, bitcoin and so on.</td>
-              </tr>
-              <tr class="section-schedule__table--light">
-                <td>10:30 AM</td>
-                <td>Tea Break</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>11:00 AM</td>
-                <td>Implementing Exactly Once Delivery in Stream Data<br><strong>- Dr. Sandeep Deshmukh</strong><br><strong>- Tushar Gosavi</strong></td>
-                <td>Apache Apex which is a streaming data platform, implements Chandy Lamport algorithm (http://lamport.azurewebsites.net/pubs/chandy.pdf) for checkpointing of the application. The talk
-                  will take you through how the algorithm is implemented in Apex for maintaining internal consistent
-                  state. And how transaction and replay could be used to interact with external system to achieve end
-                  to end exactly once.</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="section-schedule__items">
+          <div class="section-schedule__item">
+            <p>9:00 AM</p>
+            <h5>Registration</h5>
+          </div>
+          <div class="section-schedule__item">
+            <p>9:30 AM</p>
+            <h5>The Many Flavours Of Consensus - Dr. Sriram Srinivasan</h5>
+            <p>Consensus is the act of agreement amongst distributed participants. This talk will try to make sense of the wide variety of problems and solutions that are lumped under the consensus label: two-phase commit, byzantine agreement, paxos/raft, bitcoin and so on.</p>
+          </div>
+          <div class="section-schedule__item">
+            <p>10:30 AM</p>
+            <h5>Tea Break</h5>
+          </div>
+          <div class="section-schedule__item">
+            <p>11:00 AM</p>
+            <h5>Implementing Exactly Once Delivery in Stream Data - Tushar Gosavi</h5>
+            <p>Apache Apex which is a streaming data platform, implements Chandy Lamport algorithm (http://lamport.azurewebsites.net/pubs/chandy.pdf) for checkpointing of the application. The talk will take you through how the algorithm is implemented in Apex for maintaining internal consistent state. And how transaction and replay could be used to interact with external system to achieve end to end exactly once.</p>
+          </div>
         </div>
       </div>
     </section>
