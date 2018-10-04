@@ -11,7 +11,7 @@ html, body {
 body {
   font-size: 1em;
   line-height: 1.375em;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,10 +24,11 @@ body {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.3em;
+  font-size: 16px;
+  line-height: 30px;
   margin: 0;
   margin-bottom: 20px;
+  color: lighten($grey-color-dark, 10%);
 
   @media (max-width: 767px) {
     line-height: 1.25em;
