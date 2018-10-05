@@ -11,22 +11,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  }
-
-  .nav- {
-    &left, &right {
-      flex: 1;
-    }
-
-    &right {
-      flex: 4;
-      text-align: right;
-    }
-
-    &left img {
-      height: 25px;
-      padding: 5px 0;
-    }
+    justify-content: center;
   }
 
   ul {

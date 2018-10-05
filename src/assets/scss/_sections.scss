@@ -3,8 +3,7 @@
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  min-height: 100vh;
 
   img {
     margin-bottom: 30px;
@@ -14,7 +13,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    font-size: 16px;
   }
 
   h1 {
@@ -28,7 +26,8 @@
 
   &__wrapper {
     width: 70%;
-    padding: 50px 0;
+    padding-top: 130px;
+    padding-bottom: 50px;
   }
 
   &__social {
@@ -231,6 +230,8 @@
     position: relative;
     width: 45%;
     margin: 0 auto;
+    z-index: 4;
+    padding: 30px 0;
 
     &::after {
       content: '';
@@ -241,6 +242,7 @@
       bottom: 0;
       left: 50%;
       margin-left: -3px;
+      
     }
   }
 
@@ -250,10 +252,11 @@
     border: 2px solid darken($grey-color-light, 10%);
     border-radius: 10px;
     position: relative;
+    z-index: 1;
 
     p {
       margin-bottom: 10px;
-      margin-top: 20px;
+      margin-top: 10px;
 
       &:first-child {
         margin: 0;
@@ -268,6 +271,7 @@
 
     h5 {
       margin: 0;
+      margin-top: 10px;
       font-size: 18px;
     }
 
@@ -293,8 +297,8 @@
         width: 15px;
         height: 15px;
         right: -12.7%;
-        background-color: darken($grey-color-light, 10%);
-        border: 2px solid darken($grey-color-light, 20%);
+        background-color: #ffffff;
+        border: 2px solid $primary-color;
         top: 15px;
         border-radius: 50%;
         z-index: 1;
@@ -323,8 +327,8 @@
         width: 15px;
         height: 15px;
         left: -12.5%;
-        background-color: darken($grey-color-light, 10%);
-        border: 2px solid darken($grey-color-light, 20%);
+        background-color: #ffffff;
+        border: 2px solid $primary-color;
         top: 15px;
         border-radius: 50%;
         z-index: 99;
