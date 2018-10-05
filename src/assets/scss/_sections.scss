@@ -229,7 +229,19 @@
 
   &__items {
     position: relative;
-    padding: 0 15%;
+    width: 45%;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: darken($grey-color-light, 10%);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
   }
 
   &__item {
@@ -237,6 +249,7 @@
     padding: 30px;
     border: 2px solid darken($grey-color-light, 10%);
     border-radius: 10px;
+    position: relative;
 
     p {
       margin-bottom: 10px;
@@ -246,11 +259,76 @@
         margin: 0;
         margin-bottom: 3px;
       }
+
+      &:first-child {
+        font-size: 20px;
+        color: $primary-color;
+      }
     }
 
     h5 {
       margin: 0;
       font-size: 18px;
+    }
+
+    &:nth-child(odd) {
+      transform: translateX(-60%);
+
+      &::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 18px;
+        width: 0;
+        z-index: 1;
+        right: -12px;
+        border: medium solid darken($grey-color-light, 10%);
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent darken($grey-color-light, 10%);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: -12.7%;
+        background-color: darken($grey-color-light, 10%);
+        border: 2px solid darken($grey-color-light, 20%);
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+    }
+
+    &:nth-child(even) {
+      transform: translateX(60%);
+
+      &::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 18px;
+        width: 0;
+        z-index: 1;
+        left: -12px;
+        border: medium solid darken($grey-color-light, 10%);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent darken($grey-color-light, 10%) transparent transparent;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: -12.5%;
+        background-color: darken($grey-color-light, 10%);
+        border: 2px solid darken($grey-color-light, 20%);
+        top: 15px;
+        border-radius: 50%;
+        z-index: 99;
+      }
     }
   }
 }
