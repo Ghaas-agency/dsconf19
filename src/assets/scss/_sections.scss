@@ -1,6 +1,6 @@
 .section-hero {
   background-image: url('../img/DSCONF_Web.jpg');
-  background-position: left bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -31,7 +31,7 @@
   }
 
   &__social {
-    margin-top: 50px;
+    margin-top: 120px;
 
     a {
       margin: 0 10px;
