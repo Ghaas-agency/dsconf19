@@ -1,0 +1,23 @@
+{
+  "name": "dsconf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --output-style compressed -w src/assets/scss/style.scss src/assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghaas-agency/dsconf19.git"
+  },
+  "keywords": [],
+  "author": "Akshay Dhiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ghaas-agency/dsconf19/issues"
+  },
+  "homepage": "https://github.com/Ghaas-agency/dsconf19#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
