@@ -1,0 +1,14 @@
+nav {
+  z-index: 4;
+
+  img {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    max-width: 175px;
+
+    @media only screen and (max-width: 480px) {
+      left: 3%;
+    }
+  }
+}
