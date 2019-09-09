@@ -1,14 +1,32 @@
-nav {
+.nav {
   z-index: 4;
 
-  img {
+  &-container {
     position: absolute;
     top: 25px;
     left: 25px;
-    max-width: 175px;
+    width: calc(100% - 50px);
+  }
+
+  img {
+    width: 175px;
 
     @media only screen and (max-width: 480px) {
       left: 3%;
+    }
+  }
+
+  .nav-links {
+    float: right;
+    padding: 10px 0;
+
+    a {
+      margin: 0 5px;
+      font-size: 0.9em;
+      
+      @media only screen and (max-width: 767px) {
+        margin: 0 10px;
+      }
     }
   }
 }

@@ -32,3 +32,17 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $f;
+  }
+
+  &:focus {
+    color: $primaryhover;
+  }
+}
