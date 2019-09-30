@@ -31,24 +31,24 @@
 
     &--img {
       z-index: 2;
-      width: 580px;
+      width: 500px;
 
       @media only screen and (max-width: 979px) {
         position: absolute;
         top: 280px;
         left: 50%;
-        width: 80%;
+        width: 75%;
         max-width: 400px;
         transform: translateX(-50%);
       }
 
       @media only screen and (max-width: 480px) {
-        top: 240px;
-        width: 80%;
+        top: 220px;
+        width: 75%;
       }
       
       @media only screen and (max-width: 380px) {
-        width: 90%;
+        width: 85%;
       }
     }
 
