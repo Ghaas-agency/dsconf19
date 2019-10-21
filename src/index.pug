@@ -51,11 +51,13 @@ html(lang="en")
           .nav-links
             a(href="2019/", title="DSConf 2019") 2019
             a(href="2018/", title="DSConf 2018") 2018
+
       section.index-hero.position-relative
+        .circle
         .container
           .row.position-relative
             .flex-1
-              h1.uppercase.primary.mb-1
+              h1.mb-1
                 span.small India's Premier
                 br
                 | Distributed
@@ -78,6 +80,65 @@ html(lang="en")
             .flex-1
               img.index-hero--img.position-relative(src="assets/img/dsconf20-header.png", alt="dsconf20 header")
 
+      section.index-speakers
+        .container
+          h2 Speakers
+          .index-speakers__items.row
+            .index-speakers__item.flex-1
+              .row
+                .flex-1.center
+                  img(src="assets/img/peter-alvaro.jpg", alt="peter alvaro")
+                .flex-2
+                  h3 Peter Alvaro
+              p Peter Alvaro is an Assistant Professor of Computer Science at UC Santa Cruz. He earned his PhD at UC Berkeley, where he was advised by Joe Hellerstein. His research interests lie at the intersection of databases, distributed systems and programming languages: in particular, he wants to know how the lessons from the first may be incorporated into the third, and to what degree this mitigates the difficulties of the second.
+            .index-speakers__item.flex-1
+
+      section.index-sponsors.center
+        .container
+          .index-sponsors__wrapper
+            h2 Sponsors
+            p.white Interested? Fill in the form and we’ll get in touch with you ASAP. 
+              a(href="sponsor/") Learn more.
+            form#mc-embedded-subscribe-form.validate.left(action='https://oogway.us17.list-manage.com/subscribe/post?u=3b53d3b251c5ec89b2abd666d&id=0f6d6bf9b8', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+              #mc_embed_signup_scroll
+                .mc-field-group
+                  label(for='mce-EMAIL')
+                    | Email Address
+                  input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
+                .row
+                  .mc-field-group.flex-1
+                    label(for='mce-FNAME')
+                      | First Name
+                    input#mce-FNAME.required(type='text', value='', name='FNAME')
+                  .mc-field-group.flex-1
+                    label(for='mce-LNAME')
+                      | Last Name 
+                      span.form-optional - nice to have
+                    input#mce-LNAME(type='text', value='', name='LNAME')
+                .mc-field-group
+                  label(for='mce-COMPANY')
+                    | Company Name
+                  input#mce-COMPANY.required(type='text', value='', name='COMPANY')
+                .mc-field-group.size1of2
+                  label(for='mce-PHONE')
+                    | Phone Number 
+                    span.form-optional - nice to have
+                  input#mce-PHONE(type='text', name='PHONE', value='')
+                #mce-responses.clear
+                  #mce-error-response.response(style='display:none')
+                  #mce-success-response.response(style='display:none')
+                // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                  input(type='text', name='b_3b53d3b251c5ec89b2abd666d_0f6d6bf9b8', tabindex='-1', value='')
+                .clear.center
+                  button#mc-embedded-subscribe.button(type='submit', name='subscribe') Submit
+
+      section.index-location
+        .container
+          h2 Location
+          p.white Hotel Novotel, Pune, Maharashtra
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.523938641499!2d73.91137682258827!3d18.56222457027324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13f953dc837%3A0xb6782032b34e422e!2sNovotel+Pune+Nagar+Road!5e0!3m2!1sen!2sin!4v1542028023287', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+
       #mc_embed_signup.sticky-signup-form
         .container
           form#mc-embedded-subscribe-form.validate(action='https://oogway.us17.list-manage.com/subscribe/post?u=3b53d3b251c5ec89b2abd666d&id=55a4bc37f0', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate)
@@ -94,6 +155,7 @@ html(lang="en")
             button.button-unstyled.sticky-signup-form--close(type="button", onclick="closeStickyForm();")
               img(src="assets/img/close.svg", alt="close")
 
+    script(src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js")
     script.
       var submitTalkForm = document.getElementsByClassName('submit-talk-form')[0];
       var stickySignUpForm = document.getElementsByClassName('sticky-signup-form')[0];

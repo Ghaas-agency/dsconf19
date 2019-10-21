@@ -1,12 +1,13 @@
 .index {
   min-height: 100vh;
   background-color: $black;
+  overflow: hidden;
+  padding-bottom: 100px;
   
   &-hero {
     padding: 50px 0;
-    overflow: hidden;
 
-    &::before {
+    .circle {
       content: '';
       position: absolute;
       top: 50%;
@@ -22,7 +23,7 @@
       padding-top: 85px;
       padding-bottom: 100px;
 
-      &::before {
+      .circle {
         top: -780px;
         left: 50%;
         transform: translate(-50%, 0);
@@ -245,6 +246,121 @@
           width: 80%;
         }
       }
+    }
+  }
+
+  &-speakers {
+    padding: 40px 0;
+    position: relative;
+    z-index: 3;
+
+    h2 {
+      margin-bottom: 35px;
+    }
+
+    &__items {
+      @media only screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+    
+    &__item {
+      background-color: $f;
+      padding: 30px;
+      border-radius: 3px;
+
+      p {
+        line-height: 1.7;
+        opacity: 0.8;
+      }
+
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+      }
+
+      & > .row {
+        margin-bottom: 25px;
+
+        & > .flex-1 {
+          max-width: 150px;
+        }
+      }
+
+      &:last-child {
+        opacity: 0;
+      }
+    }
+  }
+
+  &-sponsors {
+    padding: 50px 0;
+
+    &__wrapper {
+      padding: 50px 0;
+      border-radius: 3px;
+      border: 1px solid $f;
+
+      @media only screen and (max-width: 870px) {
+        padding-top: 30px;
+        padding-bottom: 0;
+      }
+    }
+
+    h2 {
+      margin-bottom: 25px;
+    }
+
+    form {
+      background-color: $f;
+      padding: 20px;
+      max-width: 800px;
+      margin: 25px auto 0;
+      border-radius: 3px;
+
+      .row {
+        margin: 0 -10px;
+        align-items: flex-start;
+
+        @media only screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+
+        & > div {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+
+      .mce_inline_error {
+        color: $primary;
+        margin-top: 5px;
+      }
+      
+      input.mce_inline_error {
+        border: 1px solid $primary;
+        margin: 0;
+      }
+
+      button {
+        border: 1px solid $primary;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &-location {
+    padding: 50px 0;
+
+    h2,
+    p {
+      margin-bottom: 25px;
+    }
+
+    iframe {
+      border-radius: 3px;
     }
   }
 }
