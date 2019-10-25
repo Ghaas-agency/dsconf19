@@ -5,6 +5,10 @@
   -webkit-overflow-scrolling: touch;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -48,10 +52,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 
   @media only screen and (max-width: 767px) {
-    font-size: 1.3em;
+    font-size: 1.25em;
   }
 }
 
@@ -71,6 +75,17 @@ a {
 
   &:focus {
     color: $primaryhover;
+  }
+
+  &.white-bg {
+    &:hover {
+      color: $darkgrey;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      color: $primaryhover;
+    }
   }
 }
 

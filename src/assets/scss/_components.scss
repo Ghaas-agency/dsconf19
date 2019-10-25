@@ -113,6 +113,7 @@
 
   &:focus {
     outline: 0;
+    color: $f;
 
     &::before {
       background-color: $primaryhover;
@@ -142,6 +143,10 @@
     &:focus {
       outline: 0;
     }
+  }
+
+  &-outline {
+    border: 1px solid $black;
   }
 }
 
