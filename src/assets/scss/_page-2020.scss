@@ -345,7 +345,7 @@
     }
 
     h2 {
-      margin-bottom: 25px;
+      margin-bottom: 45px;
     }
 
     p {
@@ -355,6 +355,10 @@
     a {
       display: inline-block;
       margin: 25px 0;
+
+      &:hover {
+        color: initial;
+      }
     }
 
     a.button {
