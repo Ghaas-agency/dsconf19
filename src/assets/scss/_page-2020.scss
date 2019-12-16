@@ -345,11 +345,25 @@
     }
 
     h2 {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-top: 30px
     }
 
     a {
+      display: inline-block;
+      margin: 25px 0;
+    }
+
+    a.button {
       margin-top: 25px;
+    }
+
+    img {
+      max-width: 200px;
+      max-height: 100px;
     }
   }
 
