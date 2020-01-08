@@ -271,8 +271,8 @@
 
     &__items {
       flex-wrap: nowrap;
-      // justify-content: flex-start;
-      margin: 0 -10px;
+      align-items: stretch;
+      margin: 0 -15px;
 
       @media only screen and (max-width: 767px) {
         flex-direction: column;
@@ -286,13 +286,14 @@
       padding-top: 0;
       border-radius: 3px;
       box-shadow: $shadow;
-      max-width: 40%;
-      min-width: 40%;
-      margin: 0 10px;
+      max-width: calc(33.3333% - 30px);
+      min-width: calc(33.3333% - 30px);
+      margin: 0 15px;
       
       @media only screen and (max-width: 767px) {
         max-width: 100%;
         min-width: 100%;
+        margin: 15px 0;
       }
 
       &--avatar {
@@ -302,6 +303,7 @@
         object-fit: cover;
         margin: 0 -30px;
         clip-path: ellipse(65% 70% at 50% 30%);
+        pointer-events: none;
       }
 
       h3 {
@@ -366,7 +368,7 @@
     }
 
     img {
-      max-width: 200px;
+      max-width: 330px;
       max-height: 100px;
     }
   }
