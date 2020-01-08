@@ -166,6 +166,58 @@
         }
       }
 
+      .button-talk {
+        position: relative;
+        display: inline-block;
+
+        button {
+          cursor: not-allowed;
+        }
+
+        &::before,
+        &::after {
+          position: absolute;
+          z-index: 99;
+          opacity: 0;
+          box-shadow: $shadow;
+          transition: all 0.3s;
+          transform: translateY(5px) scale(0.95);
+        }
+
+        &::before {
+          content: 'CFPs are now closed.';
+          top: -45px;
+          background-color: $f;
+          white-space: nowrap;
+          padding: 7px 10px;
+          border-radius: 3px;
+          font-weight: bold;
+          line-height: 1;
+          transform: translateY(5px) scale(0.95);
+          transform-origin: left bottom;
+        }
+
+        &::after {
+          content: '';
+          top: -15px;
+          left: 10px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 5px 0 5px;
+          border-color: #ffffff transparent transparent transparent;
+        }
+
+        &:hover,
+        &:focus {
+          &::before,
+          &::after {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+      }
+
       @media only screen and (max-width: 979px) {
         text-align: center;
       }
@@ -179,7 +231,7 @@
         }
       }
 
-      .submit-talk-form {
+      /* .submit-talk-form {
         position: absolute;
         z-index: 6;
         left: 0;
@@ -244,7 +296,7 @@
         @media only screen and (max-width: 480px) {
           width: 80%;
         }
-      }
+      } */
     }
   }
 
