@@ -94,12 +94,12 @@ html(lang="en")
         .container
           h2 Speakers
           .index-speakers__items.row
-            .index-speakers__item.flex-1
-              img.index-speakers__item--avatar(src="assets/img/peter-alvaro.jpg", alt="Peter Alvaro")
-              h3 Peter Alvaro
-              p Peter Alvaro is an Assistant Professor of Computer Science at UC Santa Cruz. He earned his PhD at UC Berkeley, where he was advised by Joe Hellerstein. His research interests lie at the intersection of databases, distributed systems and programming languages: in particular, he wants to know how the lessons from the first may be incorporated into the third, and to what degree this mitigates the difficulties of the second.
-              a(href="https://twitter.com/palvaro", target="_blank", rel="noopener noreferrer")
-                img(src="assets/img/twitter-white.svg", alt="twitter")
+            //- .index-speakers__item.flex-1
+            //-   img.index-speakers__item--avatar(src="assets/img/peter-alvaro.jpg", alt="Peter Alvaro")
+            //-   h3 Peter Alvaro
+            //-   p Peter Alvaro is an Assistant Professor of Computer Science at UC Santa Cruz. He earned his PhD at UC Berkeley, where he was advised by Joe Hellerstein. His research interests lie at the intersection of databases, distributed systems and programming languages: in particular, he wants to know how the lessons from the first may be incorporated into the third, and to what degree this mitigates the difficulties of the second.
+            //-   a(href="https://twitter.com/palvaro", target="_blank", rel="noopener noreferrer")
+            //-     img(src="assets/img/twitter-white.svg", alt="twitter")
             .index-speakers__item.flex-1
               img.index-speakers__item--avatar(src="assets/img/rajeev-bharshetty.jpg", alt="Rajeev N Bharshetty")
               h3 Rajeev N Bharshetty
@@ -118,6 +118,14 @@ html(lang="en")
               p Manisha Salve is currently working with Data Direct Networks, India as Senior developer. She has been extensively working on storage and High Performance computing domain for more than a decade now! She is a hardcore programmer and loves to work on complex systems.
               //- a(href="https://twitter.com/unmeshjoshi", target="_blank", rel="noopener noreferrer")
               //-   img(src="assets/img/twitter-white.svg", alt="twitter")
+            .index-speakers__item.flex-1
+              img.index-speakers__item--avatar(src="assets/img/piyush-verma.jpg", alt="Piyush Verma")
+              h3 Piyush Verma
+              p Piyush has been working on Infrastructure Engineering and Distributed Systems for almost a Decade, from the days when things would break they would make a sound. He considers himself fortune to have learned these skills from some of the best engineers while scaling fairly large complex database systems like Cassandra, building an Iaas platform, or building his own microservice communication bus.
+                br
+                | His most recent stint was heading Site Reliability Engineering at Trustingsocial.com which credit-scored nearly half-billion users across 3 countries, 5 datacenters, 3 clouds.
+              //- a(href="https://twitter.com/unmeshjoshi", target="_blank", rel="noopener noreferrer")
+              //-   img(src="assets/img/twitter-white.svg", alt="twitter")
 
       section#schedule.index-schedule
         .container
@@ -134,8 +142,8 @@ html(lang="en")
               h3 TBD
               //- .index-schedule-item__right--text
               //-   p In the last decade, since the emergence of public clouds, a hard boundary has remained between public clouds and on-premises infrastructures and services. With Azure Stack, GKE, VMWare on AWS, and recent announcements about AWS Outposts, it is clear that the line between public clouds and on-premises infrastructures and services is blurring. Recent developments in the industry, such as merger between Hadoop rivals Cloudera & Hortonworks, as well as IBM's acquisition of RedHat, indicate a trend that an exciting hybrid cloud future awaits us. Public clouds entering on-premises means same logically centralized control planes (and associated managed services) will be available on both public clouds, and on-premises, making hybrid data planes possible. In addition, software systems deployment targets, which until recently were limited to bare metal and heavyweight virtual machines, have proliferated. They now include a hierarchy: Bare metal physical machines, Virtual Machines, MicroVMs, Containers, Isolates, & Functions. This fundamentally changes how distributed data platforms and data-intensive applications will be developed. This talk outlines the architectural building blocks that can be used in specific design patterns for developing modern distributed data platforms. We will draw from our experiences in developing a prominent distributed data analytics platform, Apache Hadoop, and outline how such a platform could be built today with modern building blocks. We intend to cover most aspects of the platform control planes such as high availability, disaster recovery, security, resource scheduling, orchestration, resource isolation, allocation, management, monitoring, scaling, metrics, metering, and logging. I will illustrate this architectural paradigm shift with some of the design choices we have made at Ampool, a modern data analytics platform.
-              //- button.button-unstyled.read-more(type="button") EXPAND
-              //- button.button-unstyled.collapse(type="button") COLLAPSE
+              //- button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              //- button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
               //- .index-schedule-item__right--speaker
               //-   .index-schedule-item__right--speaker-left
               //-     img(src="assets/img/milind-bhandarkar.jpg", alt="Milind Bhandarkar")
@@ -146,10 +154,10 @@ html(lang="en")
               p 10:00 AM
             .index-schedule-item__right
               h3 Patterns of Implementing Consensus
-              //- .index-schedule-item__right--text
-              //-   p In the last decade, since the emergence of public clouds, a hard boundary has remained between public clouds and on-premises infrastructures and services. With Azure Stack, GKE, VMWare on AWS, and recent announcements about AWS Outposts, it is clear that the line between public clouds and on-premises infrastructures and services is blurring. Recent developments in the industry, such as merger between Hadoop rivals Cloudera & Hortonworks, as well as IBM's acquisition of RedHat, indicate a trend that an exciting hybrid cloud future awaits us. Public clouds entering on-premises means same logically centralized control planes (and associated managed services) will be available on both public clouds, and on-premises, making hybrid data planes possible. In addition, software systems deployment targets, which until recently were limited to bare metal and heavyweight virtual machines, have proliferated. They now include a hierarchy: Bare metal physical machines, Virtual Machines, MicroVMs, Containers, Isolates, & Functions. This fundamentally changes how distributed data platforms and data-intensive applications will be developed. This talk outlines the architectural building blocks that can be used in specific design patterns for developing modern distributed data platforms. We will draw from our experiences in developing a prominent distributed data analytics platform, Apache Hadoop, and outline how such a platform could be built today with modern building blocks. We intend to cover most aspects of the platform control planes such as high availability, disaster recovery, security, resource scheduling, orchestration, resource isolation, allocation, management, monitoring, scaling, metrics, metering, and logging. I will illustrate this architectural paradigm shift with some of the design choices we have made at Ampool, a modern data analytics platform.
-              //- button.button-unstyled.read-more(type="button") EXPAND
-              //- button.button-unstyled.collapse(type="button") COLLAPSE
+              .index-schedule-item__right--text.section-schedule-item__right--text
+                p Consensus is an important concept in distributed systems. There are various algorithms like Paxos, ZAB, RAFT which are used in mainstream products. While on the face of it the algorithms look different, there are some common implementation patterns observed in all mainstream implementations. The talk will show working implementations of ZAB and RAFT to explain these patterns. The talk will mostly be showcasing working code backed by PPT only where needed. The code is available on github https://github.com/unmeshjoshi/distributedarchitectures which includes strip down versions of ZAB, Kafka and Cassandra. I will focus mostly on consensus part of the code.
+              button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
               .index-schedule-item__right--speaker
                 .index-schedule-item__right--speaker-left
                   img(src="assets/img/unmesh-joshi.jpg", alt="Unmesh Joshi")
@@ -165,10 +173,10 @@ html(lang="en")
               p 11:30 AM
             .index-schedule-item__right
               h3 Distributed Transactions which Scale
-              //- .index-schedule-item__right--text
-              //-   p When I originally developed the Universal Scalability Law (USL), it was in the context of tightly-coupled Unix multiprocessors, which led to an inherent dependency between the serial contention term and the data consistency term in the USL, i.e., no contention, no coherency penalty. Later, I realized that the USL could have broader applicability to large-scale clusters if this dependency was removed. In this talk I will show examples of how the USL can be applied as a statistical regression model to a variety of large-scale distributed systems, such as, Hadoop, Zookeeper, Sirius, AWS cloud, and Avalanche DLT, in order to quantify their scalability in terms of numerical concurrency, contention, and coherency.
-              //- button.button-unstyled.read-more(type="button") EXPAND
-              //- button.button-unstyled.collapse(type="button") COLLAPSE
+              .index-schedule-item__right--text
+                p In a traditional monolithic application backed by a database, you are guaranteed to get ACID properties through localised database transactions. However in a complex microservice architecture, numerous services take part in solving a particular business problem. These services are loosely coupled and backed by their own databases. Maintaining application consistency across these services is a big challenge.In this talk, I propose an alternate solution implemented at Gojek for maintaining application consistency across services which scales. We discuss The Saga pattern, its fundamentals and how it is applied at Gojek. We go through real world cases of its successful application and implementation in production with code samples in Go.
+              button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
               .index-schedule-item__right--speaker
                 .index-schedule-item__right--speaker-left
                   img(src="assets/img/rajeev-bharshetty.jpg", alt="Rajeev Bharshetty")
@@ -186,8 +194,8 @@ html(lang="en")
               h3 Flash Talks
               //- .index-schedule-item__right--text
               //-   p In this talk, we’ll go over the case study of Helpshift as a massively distributed architecture that sees 160,000 requests per second and cover topics with respect to problems that arise due to entropy. Topics will include, what data inconsistencies are in real world, Helpshift’s distributed architecture, initial attempts and why did they not work? We’lI also talk about isolating the root cause which results in data inaccuracies, the solution and mitigating unsolvable side effects of distributed architectures.
-              //- button.button-unstyled.read-more(type="button") EXPAND
-              //- button.button-unstyled.collapse(type="button") COLLAPSE
+              //- button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              //- button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
               //- .index-schedule-item__right--speaker
               //-   .index-schedule-item__right--speaker-left
               //-     img(src="assets/img/somya-maithani.jpg", alt="Somya Maithani")
@@ -198,10 +206,10 @@ html(lang="en")
               p 02:00 PM
             .index-schedule-item__right
               h3 Multi-Core Programming
-              //- .index-schedule-item__right--text
-              //-   p In large scale customer focused distributed systems with asynchronous programming based products, tracing and monitoring becomes hard. As system scales with higher request counts for the product with multiple projects involved in a single pipeline, having proper logging, tracing, monitoring and metric system setup for the product reliably available becomes difficult. In this talk I will be speaking about comparing distributed monitoring, observability, and performance packages and the best practices to build a generic scalable distributed monitoring, observability, and performance package independent on your code style of your project.
-              //- button.button-unstyled.read-more(type="button") EXPAND
-              //- button.button-unstyled.collapse(type="button") COLLAPSE
+              .index-schedule-item__right--text
+                p Multi-core systems are around for quite some time now. But lot of applications are not written to take full advantage of the parallalizm it provides to the applications, improving the performance. This talk will cover multiple advantages multi-core systems provide and will also point out the challenges in multi-core programming. This will also cover real-life examples of multi-core programming.
+              button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
               .index-schedule-item__right--speaker
                 .index-schedule-item__right--speaker-left
                   img(src="assets/img/manisha-salve.jpeg", alt="Manisha Salve")
@@ -212,15 +220,15 @@ html(lang="en")
               p 03:00 PM
             .index-schedule-item__right
               h3 Tea Break
-          .index-schedule-item#time-0400pm#time-0400pm
+          .index-schedule-item#time-0400pm
             .index-schedule-item__left
               p 03:30 PM
             .index-schedule-item__right
               h3 TBD
               //- .index-schedule-item__right--text
               //-   p Knowledge Logic is a system of logic that provides a framework for what it means to "know" something, or how to deduce "I know that you know that I know". This has far-reaching implications for everything from distributed systems to politics to navigating traffic. This talk is a gentle introduction to the topic, and will leave you with the knowhow to topple dicators.
-              //- button.button-unstyled.read-more(type="button") EXPAND
-              //- button.button-unstyled.collapse(type="button") COLLAPSE
+              //- button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              //- button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
               //- .index-schedule-item__right--speaker
               //-   .index-schedule-item__right--speaker-left
               //-     img(src="assets/img/dr-sriram-srinivasan.jpg", alt="Dr. Sriram Srinivasan")
@@ -319,3 +327,20 @@ html(lang="en")
           nav.className = 'nav';
         }
       });
+
+      function collapseTalkDescription(e) {
+        var parent = e.target.parentElement;
+        var textEl = parent.getElementsByClassName('index-schedule-item__right--text')[0];
+        var readMoreText = parent.getElementsByClassName('read-more')[0];
+        textEl.style.maxHeight = '66px';
+        e.target.style.display = 'none';
+        readMoreText.style.display = 'inline-block';
+      }
+
+      function expandTalkDescription(e) {
+        var trucTextEl = e.target.parentElement.getElementsByClassName('index-schedule-item__right--text')[0];
+        trucTextEl.style.maxHeight = 'unset';
+        e.target.style.display = 'none';
+        var collapseEl = e.target.parentElement.getElementsByClassName('collapse')[0];
+        collapseEl.style.display = 'inline-block';
+      }
