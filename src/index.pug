@@ -126,6 +126,12 @@ html(lang="en")
                 | His most recent stint was heading Site Reliability Engineering at Trustingsocial.com which credit-scored nearly half-billion users across 3 countries, 5 datacenters, 3 clouds.
               //- a(href="https://twitter.com/unmeshjoshi", target="_blank", rel="noopener noreferrer")
               //-   img(src="assets/img/twitter-white.svg", alt="twitter")
+            .index-speakers__item.flex-1
+              img.index-speakers__item--avatar(src="assets/img/udayan-kanade.jpg", alt="Udayan Kanade")
+              h3 Udayan Kanade
+              p Udayan did his MS in Computer Science from Stanford University. After working in parallel programming methodologies for a few years, Udayan started Oneirix Labs. Oneirix develops new technologies (hardware and algorithms) for companies across the world.
+              //- a(href="https://twitter.com/unmeshjoshi", target="_blank", rel="noopener noreferrer")
+              //-   img(src="assets/img/twitter-white.svg", alt="twitter")
 
       section#schedule.index-schedule
         .container
@@ -139,16 +145,16 @@ html(lang="en")
             .index-schedule-item__left
               p 09:00 AM
             .index-schedule-item__right
-              h3 TBD
-              //- .index-schedule-item__right--text
-              //-   p In the last decade, since the emergence of public clouds, a hard boundary has remained between public clouds and on-premises infrastructures and services. With Azure Stack, GKE, VMWare on AWS, and recent announcements about AWS Outposts, it is clear that the line between public clouds and on-premises infrastructures and services is blurring. Recent developments in the industry, such as merger between Hadoop rivals Cloudera & Hortonworks, as well as IBM's acquisition of RedHat, indicate a trend that an exciting hybrid cloud future awaits us. Public clouds entering on-premises means same logically centralized control planes (and associated managed services) will be available on both public clouds, and on-premises, making hybrid data planes possible. In addition, software systems deployment targets, which until recently were limited to bare metal and heavyweight virtual machines, have proliferated. They now include a hierarchy: Bare metal physical machines, Virtual Machines, MicroVMs, Containers, Isolates, & Functions. This fundamentally changes how distributed data platforms and data-intensive applications will be developed. This talk outlines the architectural building blocks that can be used in specific design patterns for developing modern distributed data platforms. We will draw from our experiences in developing a prominent distributed data analytics platform, Apache Hadoop, and outline how such a platform could be built today with modern building blocks. We intend to cover most aspects of the platform control planes such as high availability, disaster recovery, security, resource scheduling, orchestration, resource isolation, allocation, management, monitoring, scaling, metrics, metering, and logging. I will illustrate this architectural paradigm shift with some of the design choices we have made at Ampool, a modern data analytics platform.
-              //- button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
-              //- button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
-              //- .index-schedule-item__right--speaker
-              //-   .index-schedule-item__right--speaker-left
-              //-     img(src="assets/img/milind-bhandarkar.jpg", alt="Milind Bhandarkar")
-              //-   .index-schedule-item__right--speaker-right
-              //-     p Dr. Milind Bhandarkar
+              h3 It Won't Make a Noise When it Breaks
+              .index-schedule-item__right--text
+                p Systems fail but the real failures are the ones from those we learn nothing. This talk is a tale of few such failures that went right under our noses and what we did to prevent those. The failures covered range from Heterogenous systems, unordered events, missing correlations and just human errors.
+              button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
+              .index-schedule-item__right--speaker
+                .index-schedule-item__right--speaker-left
+                  img(src="assets/img/piyush-verma.jpg", alt="Piyush Verma")
+                .index-schedule-item__right--speaker-right
+                  p Piyush Verma
           .index-schedule-item#time-1000am
             .index-schedule-item__left
               p 10:00 AM
@@ -224,16 +230,16 @@ html(lang="en")
             .index-schedule-item__left
               p 03:30 PM
             .index-schedule-item__right
-              h3 TBD
-              //- .index-schedule-item__right--text
-              //-   p Knowledge Logic is a system of logic that provides a framework for what it means to "know" something, or how to deduce "I know that you know that I know". This has far-reaching implications for everything from distributed systems to politics to navigating traffic. This talk is a gentle introduction to the topic, and will leave you with the knowhow to topple dicators.
-              //- button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
-              //- button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
-              //- .index-schedule-item__right--speaker
-              //-   .index-schedule-item__right--speaker-left
-              //-     img(src="assets/img/dr-sriram-srinivasan.jpg", alt="Dr. Sriram Srinivasan")
-              //-   .index-schedule-item__right--speaker-right
-              //-     p Dr. Sriram Srinivasan
+              h3 Algorithmic Fault Tolerance: A Road Traffic Management Case Study
+              .index-schedule-item__right--text
+                p Fault tolerance is not just a systems concern: there is an algorithmic aspect to it as well. This talk will explain some aspects of algorithmic fault tolerance using distributed AI traffic signals as a case study. Oneirix's AI traffic signal technology optimizes road traffic in real time using a fog-edge-cloud system architecture. A large part of this architecture is out weathering sun, rain and hail and hence fault tolerance is of utmost important. The experience of developing this system may be applied to other autonomous distributed systems as well.
+              button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
+              .index-schedule-item__right--speaker
+                .index-schedule-item__right--speaker-left
+                  img(src="assets/img/udayan-kanade.jpg", alt="Udayan Kanade")
+                .index-schedule-item__right--speaker-right
+                  p Udayan Kanade
 
       section#sponsors.index-sponsors.center
         .container
@@ -251,6 +257,9 @@ html(lang="en")
             h3(style="margin-top: 25px;") Recruitment Partner
             a(href="https://workshiphq.com/" target="_blank" rel="noopener noreferrer")
               img(src="assets/img/workship-logo.svg", alt="workship logo" width="240")
+            h3(style="margin-top: 25px;") Student Sponsor
+            a(href="http://one2n.in/" target="_blank" rel="noopener noreferrer" style="margin-top: 15px")
+              img(src="assets/img/One2n-logo.png", alt="one2n logo" width="190")
             p Interested in being a part of the DSConf 2020 as a sponsor? 
               a(href="sponsor/") Learn More.
 
