@@ -132,6 +132,12 @@ html(lang="en")
               p Udayan did his MS in Computer Science from Stanford University. After working in parallel programming methodologies for a few years, Udayan started Oneirix Labs. Oneirix develops new technologies (hardware and algorithms) for companies across the world.
               //- a(href="https://twitter.com/unmeshjoshi", target="_blank", rel="noopener noreferrer")
               //-   img(src="assets/img/twitter-white.svg", alt="twitter")
+            .index-speakers__item.flex-1
+              img.index-speakers__item--avatar(src="assets/img/jaideep-khandelwal.jpg", alt="Jaideep Khandelwal")
+              h3 Jaideep Khandelwal
+              p Jaideep is the Co-founder of One2n consulting, helping businesses grow while they are scaling. From setting up bare-metal machines in Datacenters to running Distributed Systems on top of it. He has worked on running systems reliabiliy on production. He holds a Master in High Performance Distributed Computing from Vrije University, Amsterdam.
+              //- a(href="https://twitter.com/unmeshjoshi", target="_blank", rel="noopener noreferrer")
+              //-   img(src="assets/img/twitter-white.svg", alt="twitter")
 
       section#schedule.index-schedule
         .container
@@ -197,19 +203,23 @@ html(lang="en")
             .index-schedule-item__left
               p 01:30 PM
             .index-schedule-item__right
-              h3 Flash Talks
-              //- .index-schedule-item__right--text
-              //-   p In this talk, we’ll go over the case study of Helpshift as a massively distributed architecture that sees 160,000 requests per second and cover topics with respect to problems that arise due to entropy. Topics will include, what data inconsistencies are in real world, Helpshift’s distributed architecture, initial attempts and why did they not work? We’lI also talk about isolating the root cause which results in data inaccuracies, the solution and mitigating unsolvable side effects of distributed architectures.
-              //- button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
-              //- button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
-              //- .index-schedule-item__right--speaker
-              //-   .index-schedule-item__right--speaker-left
-              //-     img(src="assets/img/somya-maithani.jpg", alt="Somya Maithani")
-              //-   .index-schedule-item__right--speaker-right
-              //-     p Somya Maithani
+              h3 FMEAs of the Distributed Systems before going live on Production
+              .index-schedule-item__right--text
+                p Every time, a new system has to deploy to Production, we need to ask these questions:
+                ul
+                  li Was there enough validation as to how the system behaves in de-graded mode?
+                  li What trade-offs did we settle for in choosing CAP?
+                p This talk covers how to approach towards creating an FMEA(Failure Mode and Effect Analysis) report, understand known knowns and known unknowns to take an informed call before deploying to Production.  Every organization has its own set of the runtime environment and identifying the behaviour under those conditions for debugging and avoiding operation challenges.
+              button.button-unstyled.read-more(type="button" onclick="expandTalkDescription(event);") EXPAND
+              button.button-unstyled.collapse(type="button" onclick="collapseTalkDescription(event);") COLLAPSE
+              .index-schedule-item__right--speaker
+                .index-schedule-item__right--speaker-left
+                  img(src="assets/img/jaideep-khandelwal.jpg", alt="Jaideep Khandelwal")
+                .index-schedule-item__right--speaker-right
+                  p Jaideep Khandelwal
           .index-schedule-item#time-0200pm
             .index-schedule-item__left
-              p 02:00 PM
+              p 02:30 PM
             .index-schedule-item__right
               h3 Multi-Core Programming
               .index-schedule-item__right--text
@@ -223,12 +233,12 @@ html(lang="en")
                   p Manisha Salve
           .index-schedule-item.schedule-grey#time-0300pm
             .index-schedule-item__left
-              p 03:00 PM
+              p 03:30 PM
             .index-schedule-item__right
               h3 Tea Break
           .index-schedule-item#time-0400pm
             .index-schedule-item__left
-              p 03:30 PM
+              p 04:00 PM
             .index-schedule-item__right
               h3 Algorithmic Fault Tolerance: A Road Traffic Management Case Study
               .index-schedule-item__right--text

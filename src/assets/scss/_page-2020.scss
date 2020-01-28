@@ -477,6 +477,14 @@
           line-height: 1.5;
         }
 
+        li {
+          line-height: 1.5;
+        }
+
+        ul {
+          margin: 8px 0;
+        }
+
         button {
           &.read-more {
             display: inline-block;
